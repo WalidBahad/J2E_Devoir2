@@ -21,6 +21,6 @@ public class Je2Tp2Application implements CommandLineRunner {
     public void run(String... args) {
         productRepository.save(new Product(1, "smart phone", 3200, 20));
         productRepository.save(new Product(2, "computer", 4000, 4));
-        System.out.println("✅ Products inserted into H2 database.");
+        System.out.println("Products inserted into H2 database.");
     }
 }
