@@ -6,13 +6,13 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.4.4</version>
-        <relativePath/>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>university</groupId>
-    <artifactId>JE2_TP2</artifactId>
+    <groupId>net.nasserollah</groupId>
+    <artifactId>student-app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>JE2_TP2</name>
-    <description>JE2_TP2</description>
+    <name>student-app</name>
+    <description>student-app</description>
     <url/>
     <licenses>
         <license/>
@@ -27,7 +27,7 @@
         <url/>
     </scm>
     <properties>
-        <java.version>21</java.version>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -47,7 +47,6 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.36</version>
             <optional>true</optional>
         </dependency>
         <dependency>
@@ -55,6 +54,14 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>12.4.2.jre11</version> <!-- jre11 or jre8 also works with Java 17 -->
+        </dependency>
+
+
+
     </dependencies>
 
     <build>
